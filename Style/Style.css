@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* PAGINA INTRO*/
+body#intro{
+    background-image: url(../image/Mecanica-Automotriz.webp);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+body#intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+body#intro header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body#intro header img{
+    margin-top: 40px;
+    width: 12%;
+    height:fit-content;
+}
+/* NAVEGACION INTRO */
+body#intro nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body#intro nav ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+body#intro nav ul li{
+    width: 100%;
+    padding: 1.5%;
+    text-align: center;
+    background-color: orange;
+    margin: 2%;
+    list-style: none;
+
+}
+
+body#intro nav ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* footer intro */
+body#intro footer{
+    background-color:black;
+    width: 100%;
+    height: 80px;
+
+}
+
+
+
+
+
+/* RESTOS DE LAS PAGINAS*/
+
+/** Header **/
+body header{
+    background-image: url(../image/Mecanica-Automotriz.webp);
+    height: 250px;
+
+}
+body header nav{
+    background-color: orange;
+    position:fixed;
+    width: 100%;
+}
+body header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    background: linear-gradient(60deg, orange ,black);
+
+}
+body header nav ul li{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+body header nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+
+}
+
+
+/** cuerpo de pagina **/
+
+/*nosotros pag  */
+main{
+    width: 100%;
+    min-height: 500px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    padding: 10%;
+}
+
+main h1{
+    color: orange;
+
+}
+main p{
+    padding: 15px;
+    
+}
+
+main div.nosotros1{
+    width: 100%;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "p p img"
+    
+    ;
+
+}
+main div.nosotros2{
+    width: 100%;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "img p p"
+    ;
+
+}
+
+h2{
+    color: orange;
+    padding-bottom: 1vh;
+
+}
+main div p{
+    grid-area: p;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+main div img{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+
+}
+
+p.end{
+    padding-top: 100px;
+
+}
+
+p.end a{
+    text-decoration: none;
+}
+
+/*Recomendaciones pag*/
+div.recomendaciones, div.consultas {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.recomendaciones p, div.consultas p{
+    margin: 5px;
+    width: 80%;
+    background-color: orange;
+    filter:alpha(opacity=60);
+    -moz-opacity:.60;opacity:.60;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+
+/*consultas pag*/
+
+section#consultas{
+    width: 50%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+section#contactos{
+    width: 50%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------   FOOTER    -------------------*/
+footer{
+    background-color:orange;
+    width: 100%;
+    height: 80px;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 40px;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+/* -----DISEÑO RESPONSIVE----- */
+@media screen and (max-width: 500px){ 
+    
+    body#intro{
+        width: 100%;
+
+    }
+
+    body#intro header{
+        padding: 0;
+        margin: 0;
+        height: 170px;
+        align-items: center;
+    
+    }
+
+    body#intro header img{
+        width: 20%;
+
+    }
+
+    body#intro nav ul{
+        display: flex;
+        flex-direction: column;    
+    
+    }
+
+    body#intro nav ul li{
+
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    footer{
+        background: linear-gradient(orange, black);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+    body header{
+        height: 100px;
+    }
+    main.contactos{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+    }
+} 
