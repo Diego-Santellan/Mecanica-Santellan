@@ -13,11 +13,10 @@ body#intro{
     background-image: url(../image/Mecanica-Automotriz.webp);
     position: absolute;
     width: 100%;
-    min-height: 100%;
+    height: 100vh;
 }
 
 body#intro{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,9 +87,6 @@ body#intro nav ul li:hover a{
 }
 
 
-
-
-
 /* RESTOS DE LAS PAGINAS*/
 
 
@@ -101,7 +97,6 @@ body header{
 
 }
 body header nav{
-    background-color: orange;
     position:fixed;
     width: 100%;
 }
@@ -109,7 +104,6 @@ body header nav ul{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    
     background: linear-gradient(60deg, orange ,black);
 
 }
@@ -266,6 +260,7 @@ section#consultas form > input{
     color: darkgoldenrod;
 }
 
+/*contactos*/
 section#contactos{
     width: 100%;
     display: flex;
